@@ -1,0 +1,16 @@
+name: SpacePlugin
+main: io.github.LilParker.SpacePlugin.SpacePlugin
+version: 0.001
+
+commands:
+  test:
+    description: Just a test.
+    usage: /test (message)
+  
+  tpd:
+    description: Changes your dimension (world)
+    usage: /tpd (dimension/world name)
+  
+  unload:
+    description: Unloads a dimension (world)
+    usage: /unload (dimension/world name)
