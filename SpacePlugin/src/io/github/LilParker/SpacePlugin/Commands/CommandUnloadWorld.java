@@ -22,9 +22,7 @@ public class CommandUnloadWorld extends SpacePluginCommand implements CommandExe
 	}
 	
 	public void executeCommand (CommandSender sender, String[] args){
-		Bukkit.getServer().unloadWorld(args[0], false);
-		if(Bukkit.getServer().getWorlds().add(Bukkit.getWorld(args[0])) != true){
-			sender.sendMessage("Unloaded " + args[0]);
-		}
+		Bukkit.getServer().unloadWorld(args[0], true);
+		sender.sendMessage("Unloaded " + args[0]);
 	}
 }

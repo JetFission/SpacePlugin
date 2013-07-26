@@ -8,8 +8,10 @@ public final class SpacePlugin extends JavaPlugin{
 	
 	@Override
 	public void onEnable(){
-		getCommand("test").setExecutor(new CommandTest());
+		getCommand("genempty").setExecutor(new CommandGenEmpty());
 		getCommand("tpd").setExecutor(new CommandDimTele());
 		getCommand("unload").setExecutor(new CommandUnloadWorld());
+		getCommand("bbf").setExecutor(new CommandPlaceBlock());
+		getCommand("load").setExecutor(new CommandLoadWorld());
 	}
 }

@@ -2,27 +2,17 @@ package io.github.LilParker.SpacePlugin.WorldGenerators;
 
 import java.util.Random;
 
-import org.bukkit.Material;
 import org.bukkit.World;
 import org.bukkit.generator.ChunkGenerator;
 
 public class WorldGenEmptyWorld extends ChunkGenerator{
 	
 	Random rand = new Random();
+	boolean genBlock = true;
 	
 	@Override
 	public byte[][] generateBlockSections(World world, Random random, int x, int z, BiomeGrid biomes){
 		byte[][] result = new byte[world.getMaxHeight() / 16][];
-		for(x = 0; x < 16; x++){
-			for(z = 0; z < 16; z++){
-				if(rand.nextBoolean() == true){
-					setBlock(result, x, 64, z, (byte)Material.OBSIDIAN.getId());
-				}else{
-					setBlock(result, x, 63, z, (byte)Material.OBSIDIAN.getId());
-					setBlock(result, x, 64, z, (byte)Material.OBSIDIAN.getId());
-				}
-			}
-		}
 		return result;
 	}
 	

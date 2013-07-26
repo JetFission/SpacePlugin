@@ -3,14 +3,21 @@ main: io.github.LilParker.SpacePlugin.SpacePlugin
 version: 0.001
 
 commands:
-  test:
-    description: Just a test.
-    usage: /test (message)
+  genempty:
+    description: Generates a world without any blocks (For making space station/space ship maps).
+    usage: /genempty (name)
   
   tpd:
-    description: Changes your dimension (world)
-    usage: /tpd (dimension/world name)
+    description: Changes your world
+    usage: /tpd (world name)
   
   unload:
-    description: Unloads a dimension (world)
-    usage: /unload (dimension/world name)
+    description: Unloads a world ***WARNING SORT OF BROKEN***
+    usage: /unload (world name)
+    
+  load:
+    description: Loads a world
+    
+  bbf:
+    description: Block beneath feet. That's all.
+    usage: /bbf
