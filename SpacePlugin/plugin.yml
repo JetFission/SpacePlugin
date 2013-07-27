@@ -6,6 +6,14 @@ commands:
   genempty:
     description: Generates a world without any blocks (For making space station/space ship maps).
     usage: /genempty (name)
+    
+  genhill:
+    description: Generates a world with hopefully some hills
+    usage: /genhill (name)
+    
+  genoverhang:
+    description: Generates a world with overhangs
+    usage: /genoverhang (name)
   
   tpd:
     description: Changes your world
